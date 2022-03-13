@@ -1,0 +1,7 @@
+.footer{
+    /* background-color: blueviolet; */
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+.footer strong{ color: blueviolet;}
