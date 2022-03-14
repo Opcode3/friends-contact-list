@@ -1,4 +1,4 @@
 import './header.css';
 export default function Header(){
-    return (<div className='header'> Colors Display</div>);
+    return (<div className='header'> Call-in an API data</div>);
 }
