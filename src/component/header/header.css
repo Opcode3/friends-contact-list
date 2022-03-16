@@ -1,10 +1,34 @@
 .header{
     background-color: blueviolet;
-    height: 60px;
+    min-height: 60px;
     display: flex;
     align-items: center;
-    padding: 0px 20px;
     font-size: 20px;
+    justify-content: space-evenly;
     color: rgb(240, 229, 250);
-    overflow-x: hidden;
+}
+.header div{width: 90%;}
+
+.mobileMenu{display: none;}
+
+.closeMenu{display: none;}
+
+.nav{float: right; padding: 0px 10px;}
+.nav ul{ display: flex;}
+.nav li { list-style-type: none;}
+.nav li a{ color: rgb(240, 229, 250);  text-decoration: none; padding: 6px 14px;}
+
+
+@media screen and (max-width: 780px) {
+    .header div{ width: 94%; display: flex; justify-content: space-between; align-items: center;}
+    .mobileMenu{max-width: 38px; float: right; display: block;}
+    img{width: 38px;}
+    .nav ul{ flex-direction: column; align-items: center; margin-top: 20vh;}
+    .nav{display: none; background: transparent; padding: 0px 0px; left: 0; right:0; position: fixed; top: 0; height: 100vh; width: 100vw; z-index: 5; 
+        background-color: blueviolet; max-width: 100%;}
+        .open{ display: block;}
+        .nav li { padding: 10px 0;}
+        .nav li a{ font-size: 2em;}
+        .closeMenu{display: block;}
+
 }

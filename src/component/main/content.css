@@ -1,22 +1,42 @@
 main{
     min-height: calc(100vh - 160px);
-    text-align: center;
     font-weight: 300;
     margin-bottom: 50px;
+    overflow-y: auto;
 }
+
+
+.home{ display: flex; justify-content: center; align-items: center;}
+.home p{font-size: 1.6em; width: 80%; text-align: center; font-weight: 400;}
+
+.contact_list ul{margin: 0; padding: 0; padding-top: 15px;}
+.contact_list li{ background-color: blanchedalmond; float: left; min-height: 110px; list-style-type: none;
+     width: calc(100% - 52px); padding: 12px 16px; max-width: 300px; margin: 10px; }
+form{ display: flex; justify-content: center; flex-direction: column;
+width: 90%; max-width: 400px; margin: 10px auto; overflow: hidden;}
+
+.formCover{width: 100%; padding: 4px 0;}
+.formCover input[type='text'], .formCover input[type='email'], .formCover input[type='number']{ 
+    font-size: 17px; display: block; width: calc(100% - 36px); margin: 0;  padding: 12px 18px;
+border:none; outline: none; border-radius: 6px; }
+.formCover label{float: right; padding: 5px;}
+
+.form span{ font-weight: 400; font-size: 1.8em; padding: 20px 0 10px 0;} 
+
+.form button{ background-color: blueviolet;border-radius: 5px; font-size: 1.5em; margin-top: 16px;
+    color: rgb(237, 231, 243); border: none; outline: none; padding: 20px; cursor: pointer;}
+.form button:hover, .form button:active, .form button:active { background-color: rgb(53, 13, 90);}
 
 nav{ padding: 10px 20px; width: 360px; margin: 0 auto; max-width: calc(100% - 40px);}
 nav ul{margin: 0; padding: 0; display: flex;
     justify-content: space-evenly;
 }
 
+label{ display: block;}
 .data_list ul{ display: block; text-align: left;}
 .data_list li{ margin-top: 10px;}
 
-nav li{list-style-type: none; display: block; color:#FFF;
-     background-color: blueviolet; width: 100%; padding:8px 14px;
-    }
-
-nav li:first-child { border-radius: 4px 0px 0px 4px;}
-nav li:last-child{ border-radius: 0px 4px 4px 0px;}
-nav .active{ background-color: rgb(162, 84, 235);}
+@media screen and (max-width: 780px) {
+    .contact_list ul{ display: flex; flex-direction: column;}
+    .contact_list li{ width: calc(96% - 32px); padding: 10px 16px; margin: 4px 2%; max-width: calc(96% - 32px);}
+}
