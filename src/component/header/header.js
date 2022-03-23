@@ -22,7 +22,7 @@ export default function Header(){
                 Friends Contact App
                 <Nav toggleMenu={toggleMenu} setMenuToggle={setMenuToggle}/>
                 <div className="mobileMenu" onClick={()=> setMenuToggle(!toggleMenu)}>
-                    <img src={menu} />
+                    <img src={menu} alt="toggle menu" />
                 </div>
             </div>
         </div>

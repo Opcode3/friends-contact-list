@@ -1,7 +1,5 @@
-import React, {useState} from "react";
+import React from "react";
 import './content.css'
-
-// const [first, setfirst] = useState()
 
 export default function Content({title}){
     return (

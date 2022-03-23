@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
 export default function Nav({toggleMenu, setMenuToggle}){
-    const show = {display: "block"};
     return (
         <nav className={`nav ${toggleMenu && "open"}`}> 
             <ul>
